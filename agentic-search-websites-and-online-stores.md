@@ -3,7 +3,9 @@
 Author: **Piotr Czwarnowski**  
 Date: 5 November 2026  
 Licence: [CC BY 4.0](LICENSE)  
-Polish version (original): [wyszukiwanie-agentowe-strony-i-sklepy.md](wyszukiwanie-agentowe-strony-i-sklepy.md)
+Polish version (original): [wyszukiwanie-agentowe-strony-i-sklepy.md](wyszukiwanie-agentowe-strony-i-sklepy.md)  
+Blog version (Polish): <https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/>  
+Wikipedia entry (Polish): <https://pl.wikipedia.org/wiki/Wyszukiwanie_agentowe>
 
 A technical document for people who build or maintain websites and online stores. Numbers in brackets, e.g. (17), refer to the source list in section 9. Raw measurement results are in [`pomiary/`](pomiary/) (Polish for "measurements"), the check script in [`skrypty/`](skrypty/) ("scripts"), sample files in [`przyklady/`](przyklady/) ("examples").
 

@@ -3,7 +3,9 @@
 Autor: **Piotr Czwarnowski**  
 Data: 5 listopada 2026  
 Licencja: [CC BY 4.0](LICENSE)  
-English version: [agentic-search-websites-and-online-stores.md](agentic-search-websites-and-online-stores.md)
+English version: [agentic-search-websites-and-online-stores.md](agentic-search-websites-and-online-stores.md)  
+Wersja na blogu: <https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/>  
+Hasło w Wikipedii: <https://pl.wikipedia.org/wiki/Wyszukiwanie_agentowe>
 
 Dokument techniczny dla osób, które budują albo utrzymują strony i sklepy. Numery w nawiasach, np. (17), odsyłają do listy źródeł w sekcji 9. Surowe wyniki pomiarów leżą w katalogu [`pomiary/`](pomiary/), skrypt kontroli w [`skrypty/`](skrypty/), przykładowe pliki w [`przyklady/`](przyklady/).
 
