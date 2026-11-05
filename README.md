@@ -4,6 +4,8 @@ Dokument techniczny o tym, co z „gotowości na agentów AI” działa dziś, c
 
 Hasło [Wyszukiwanie agentowe](https://pl.wikipedia.org/wiki/Wyszukiwanie_agentowe) w pl.wikipedia napisaliśmy i dodaliśmy sami (5 listopada 2026) jako krótkie wyjaśnienie pojęcia.
 
+Artykuł na blogu: https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/
+
 **Autor:** Piotr Czwarnowski · **Data:** 5 listopada 2026
 
 ## Pliki
@@ -64,6 +66,8 @@ Treść: © Piotr Czwarnowski 2026, CC BY 4.0.
 A technical document on which parts of "AI agent readiness" work today, which are drafts, and how to measure them. It separates three goals (visibility in AI search, operation of a site by a browser agent, purchases through protocols), describes the layers an agent reads (accessibility tree, HTML, JSON-LD, llms.txt, robots.txt with Content-Signal, Web Bot Auth, Markdown negotiation, ARD, WebMCP), the methodology and results of measuring four websites on 5 November 2026, and a checklist for a website and a store. 29 sources.
 
 We wrote and added the entry [Wyszukiwanie agentowe](https://pl.wikipedia.org/wiki/Wyszukiwanie_agentowe) to the Polish Wikipedia ourselves (5 November 2026) as a short explanation of the term.
+
+Blog article (Polish): https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/
 
 **Author:** Piotr Czwarnowski · **Date:** 5 November 2026
 
