@@ -18,7 +18,8 @@ Artykuł o tym, czym jest wyszukiwanie agentowe, czyli wyszukiwanie, w którym a
 | [`agentic-search-websites-and-online-stores.md`](agentic-search-websites-and-online-stores.md) | pełne tłumaczenie na angielski |
 | [`ZRODLA.md`](ZRODLA.md) | lista źródeł z autorami, adresami i licencjami repozytoriów |
 | [`obrazy/`](obrazy/) | zdjęcia i zrzuty raportów użyte w artykule, zdjęcie autora |
-| [`LICENSE`](LICENSE) | tekst licencji CC BY 4.0 i nota o prawach do obrazów |
+| [`LICENSE`](LICENSE) | pełny tekst licencji CC BY 4.0 |
+| [`NOTICE`](NOTICE) | nota o prawach: autor tekstu i wyłączenia obrazów spod CC BY 4.0 |
 
 ## Licencja
 
@@ -53,7 +54,7 @@ An article on agentic search, in which an AI assistant carries out a task on a w
 
 **Author:** Piotr Czwarnowski, EcoPower Polska Sp. z o.o. · **Date:** 5 November 2026 · **Canonical (Polish) version:** <https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/>
 
-**Files:** [`wyszukiwanie-agentowe-strony-i-sklepy.md`](wyszukiwanie-agentowe-strony-i-sklepy.md) (Polish original), [`agentic-search-websites-and-online-stores.md`](agentic-search-websites-and-online-stores.md) (full English translation), [`ZRODLA.md`](ZRODLA.md) (sources), [`obrazy/`](obrazy/) (images), [`LICENSE`](LICENSE).
+**Files:** [`wyszukiwanie-agentowe-strony-i-sklepy.md`](wyszukiwanie-agentowe-strony-i-sklepy.md) (Polish original), [`agentic-search-websites-and-online-stores.md`](agentic-search-websites-and-online-stores.md) (full English translation), [`ZRODLA.md`](ZRODLA.md) (sources), [`obrazy/`](obrazy/) (images), [`LICENSE`](LICENSE) (CC BY 4.0), [`NOTICE`](NOTICE) (copyright and image exceptions).
 
 ### Licence
 
