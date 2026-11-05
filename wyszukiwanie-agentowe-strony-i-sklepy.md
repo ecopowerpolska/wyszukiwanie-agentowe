@@ -5,11 +5,11 @@
 Autor: **Piotr Czwarnowski**, EcoPower Polska Sp. z o.o.  
 Data publikacji: 5 listopada 2026  
 Wersja kanoniczna: <https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/>  
-Licencja tekstu: [CC BY 4.0](LICENSE) (licencje obrazów: [README](README.md#licencja-obrazów))  
+Licencja: [CC BY 4.0](LICENSE)  
 English version: [agentic-search-websites-and-online-stores.md](agentic-search-websites-and-online-stores.md)
 
 ![Osoba trzyma telefon z otwartym asystentem AI, na ekranie widać napis „AI”](obrazy/wyszukiwanie-agentowe-asystent-ai.jpg)
-*Zdjęcie ilustracyjne: telefon z otwartym asystentem AI (Canva, zdjęcie stockowe).*
+*Zdjęcie ilustracyjne: telefon z otwartym asystentem AI.*
 
 Wyszukiwanie agentowe to wyszukiwanie, w którym asystent AI nie pokazuje listy linków, tylko sam wykonuje zadanie. Szuka terminu, porównuje oferty, wypełnia formularz. Google tak już szuka wolnych stolików w restauracjach (1), a Lighthouse ocenia strony w nowej kategorii dla agentów (10). Dlatego już teraz liczy się, czy agent zrozumie Twoją stronę. Niżej opisuję, jak agent ją czyta, co zmierzyłem 5 listopada 2026 i co zrobić na stronie i w sklepie.
 

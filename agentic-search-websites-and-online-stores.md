@@ -6,10 +6,10 @@ Author: **Piotr Czwarnowski**, EcoPower Polska Sp. z o.o.
 Published: 5 November 2026  
 Canonical version (Polish): <https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/>  
 Translated from the Polish original: [wyszukiwanie-agentowe-strony-i-sklepy.md](wyszukiwanie-agentowe-strony-i-sklepy.md)  
-Text licence: [CC BY 4.0](LICENSE) (image licences: [README](README.md#image-licences))
+Licence: [CC BY 4.0](LICENSE)  
 
 ![A person holds a phone with an AI assistant open; the screen shows the word "AI"](obrazy/wyszukiwanie-agentowe-asystent-ai.jpg)
-*Illustrative photo: a phone with an AI assistant open (Canva, stock photo).*
+*Illustrative photo: a phone with an AI assistant open.*
 
 Agentic search is search in which the AI assistant does not show a list of links but carries out the task itself. It looks for an available slot, compares offers, fills in a form. Google already searches for free restaurant tables this way (1), and Lighthouse scores websites in a new category for agents (10). That is why it already matters whether an agent will understand your website. Below I describe how an agent reads it, what I measured on 5 November 2026, and what to do on a website and in an online store.
 

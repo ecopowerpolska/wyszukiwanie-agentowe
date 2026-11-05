@@ -19,26 +19,10 @@ Artykuł o tym, czym jest wyszukiwanie agentowe, czyli wyszukiwanie, w którym a
 | [`ZRODLA.md`](ZRODLA.md) | lista źródeł z autorami, adresami i licencjami repozytoriów |
 | [`obrazy/`](obrazy/) | zdjęcia i zrzuty raportów użyte w artykule, zdjęcie autora |
 | [`LICENSE`](LICENSE) | pełny tekst licencji CC BY 4.0 |
-| [`NOTICE`](NOTICE) | nota o prawach: autor tekstu i wyłączenia obrazów spod CC BY 4.0 |
 
 ## Licencja
 
-Tekst artykułu (wersja polska i angielska), tabele pomiarów, lista kontrolna i zdjęcie autora: © Piotr Czwarnowski 2026, licencja [Creative Commons Uznanie autorstwa 4.0 Międzynarodowe (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.pl). Możesz kopiować, zmieniać i rozpowszechniać ten materiał, także komercyjnie, pod warunkiem podania autora, źródła i licencji.
-
-### Licencja obrazów
-
-Nie wszystkie obrazy w katalogu `obrazy/` podlegają CC BY 4.0:
-
-| Plik | Pochodzenie | Licencja |
-|---|---|---|
-| `autor.jpg` | zdjęcie autora | © Piotr Czwarnowski 2026, CC BY 4.0 |
-| `wyszukiwanie-agentowe-asystent-ai.jpg` | zdjęcie stockowe z Canvy (Canva Free) | **nie podlega CC BY 4.0**, licencja Canvy; do użycia wyłącznie w tym artykule |
-| `wyszukiwanie-agentowe-asystent-glosowy.jpg` | zdjęcie stockowe z Canvy (Canva Free) | **nie podlega CC BY 4.0**, licencja Canvy; do użycia wyłącznie w tym artykule |
-| `wyszukiwanie-agentowe-psi-studioagat-przed-2026-10-14.png` | zrzut raportu PageSpeed Insights (narzędzie Google) | zrzut ekranu narzędzia Google z wynikami pomiaru autora |
-| `wyszukiwanie-agentowe-psi-studioagat-po-2026-11-05.png` | zrzut raportu PageSpeed Insights (narzędzie Google) | zrzut ekranu narzędzia Google z wynikami pomiaru autora |
-| `wyszukiwanie-agentowe-lighthouse-ecopowerpolska-agentic.png` | zrzut raportu Lighthouse (narzędzie Google) | zrzut ekranu narzędzia Google z wynikami pomiaru autora |
-
-Dwa zdjęcia stockowe z Canvy nie wchodzą w zakres licencji CC BY 4.0 tego repozytorium. Kto kopiuje artykuł, powinien je pominąć albo zastąpić własnymi.
+Treść repozytorium: © Piotr Czwarnowski 2026, licencja [Creative Commons Uznanie autorstwa 4.0 Międzynarodowe (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.pl). Możesz kopiować, zmieniać i rozpowszechniać ten materiał, także komercyjnie, pod warunkiem podania autora, źródła i licencji.
 
 ## Jak cytować
 
@@ -54,15 +38,11 @@ An article on agentic search, in which an AI assistant carries out a task on a w
 
 **Author:** Piotr Czwarnowski, EcoPower Polska Sp. z o.o. · **Date:** 5 November 2026 · **Canonical (Polish) version:** <https://www.ecopowerpolska.pl/blog/wyszukiwanie-agentowe-strony-i-sklepy/>
 
-**Files:** [`wyszukiwanie-agentowe-strony-i-sklepy.md`](wyszukiwanie-agentowe-strony-i-sklepy.md) (Polish original), [`agentic-search-websites-and-online-stores.md`](agentic-search-websites-and-online-stores.md) (full English translation), [`ZRODLA.md`](ZRODLA.md) (sources), [`obrazy/`](obrazy/) (images), [`LICENSE`](LICENSE) (CC BY 4.0), [`NOTICE`](NOTICE) (copyright and image exceptions).
+**Files:** [`wyszukiwanie-agentowe-strony-i-sklepy.md`](wyszukiwanie-agentowe-strony-i-sklepy.md) (Polish original), [`agentic-search-websites-and-online-stores.md`](agentic-search-websites-and-online-stores.md) (full English translation), [`ZRODLA.md`](ZRODLA.md) (sources), [`obrazy/`](obrazy/) (images), [`LICENSE`](LICENSE) (CC BY 4.0).
 
 ### Licence
 
-Text (Polish and English), measurement tables, checklist and author photo: © Piotr Czwarnowski 2026, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
-### Image licences
-
-The two stock photos from Canva Free (`wyszukiwanie-agentowe-asystent-ai.jpg`, `wyszukiwanie-agentowe-asystent-glosowy.jpg`) are **not** covered by CC BY 4.0; they are used under Canva's licence for this article only. The three PNG files are screenshots of Google tools (PageSpeed Insights, Lighthouse) showing the author's measurements.
+Contents: © Piotr Czwarnowski 2026, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ### How to cite
 
