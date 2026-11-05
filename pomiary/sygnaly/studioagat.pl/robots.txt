@@ -1,0 +1,117 @@
+# studioagat.pl - wszystko dozwolone; boty modeli językowych wpuszczone świadomie (polityka Piotra z nadihome.pl 2026-10-13, przyjęta dla studioagat.pl
+# decyzją sesji 2026-10-14 - WSPOLNE §8.4, 🟡 do potwierdzenia). Stary robots.txt Yoasta blokował AdsBot, CCBot, Google-Extended i GPTBot.
+# Content-Signal (https://contentsignals.org/) pod KAŻDĄ grupą, każdy bot osobną grupą (wzór nadihome.pl 6a63306) - bot z własną grupą nie czyta
+# grupy * (RFC 9309 §2.2.1), a skaner Agent Readiness Cloudflare szuka wiersza w każdej grupie (nadihome 4/5 od 6a63306; tu było 22 × UA, 2 × wiersz - F2/I2 2026-10-14).
+# Hosting lh.pl i tak odrzuca 403 CCBot, Bytespider i meta-externalagent (pomiar F 2026-10-14) - tego plik nie zmieni.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Claude-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Claude-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Perplexity-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Applebot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Applebot-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: meta-webindexer
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: meta-externalagent
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: meta-externalfetcher
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Amazonbot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Amzn-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: Amzn-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: MistralAI-Index
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: MistralAI-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: MistralAI-Training
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+User-agent: CCBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /cms/
+
+Sitemap: https://studioagat.pl/sitemap.xml

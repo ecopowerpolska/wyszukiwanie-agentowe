@@ -1,0 +1,69 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "Organization",
+    "LocalBusiness"
+  ],
+  "@id": "https://www.ecopowerpolska.pl/#organizacja",
+  "name": "EcoPower Polska",
+  "legalName": "ECOPOWER POLSKA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+  "alternateName": "EcoPower Polska Sp. z o.o.",
+  "description": "Budujemy szybkie strony i sklepy internetowe dla firm: projekt, panel do edycji, hosting i widoczność w Google. Wyniki PageSpeed każdej realizacji.",
+  "url": "https://www.ecopowerpolska.pl/",
+  "logo": "https://www.ecopowerpolska.pl/favicon.png",
+  "image": "https://www.ecopowerpolska.pl/favicon.png",
+  "email": "kontakt@ecopowerpolska.pl",
+  "telephone": "+48537318316",
+  "vatID": "PL7011019372",
+  "taxID": "7011019372",
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "KRS",
+      "value": "0000881612"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "NIP",
+      "value": "7011019372"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "REGON",
+      "value": "38814324000000"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bora Komorowskiego 21",
+    "postalCode": "03-982",
+    "addressLocality": "Warszawa",
+    "addressRegion": "mazowieckie",
+    "addressCountry": "PL"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Warszawa"
+    },
+    {
+      "@type": "Country",
+      "name": "Polska"
+    }
+  ],
+  "knowsAbout": [
+    "strony internetowe",
+    "sklepy internetowe",
+    "Astro",
+    "WooCommerce",
+    "PrestaShop",
+    "PageSpeed Insights",
+    "pozycjonowanie stron w Google"
+  ],
+  "sameAs": [
+    "https://github.com/ecopowerpolska"
+  ],
+  "hasOfferCatalog": {
+    "@id": "https://www.ecopowerpolska.pl/#oferta"
+  }
+}

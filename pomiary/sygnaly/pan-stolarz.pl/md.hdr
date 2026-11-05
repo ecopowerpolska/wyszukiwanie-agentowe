@@ -1,0 +1,18 @@
+HTTP/2 200 
+date: Thu, 05 Nov 2026 11:43:18 GMT
+content-type: text/html; charset=UTF-8
+content-length: 96420
+strict-transport-security: max-age=31536000
+vary: User-Agent,Accept-Encoding
+last-modified: Wed, 04 Nov 2026 20:58:40 GMT
+etag: "178a4-65f79a4cdf4c8"
+accept-ranges: bytes
+cache-control: public, max-age=600, stale-while-revalidate=60
+expires: Thu, 05 Nov 2026 11:53:18 GMT
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+x-frame-options: SAMEORIGIN
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=()
+server: Apache
+alt-svc: h3=":443"; ma=86400
+

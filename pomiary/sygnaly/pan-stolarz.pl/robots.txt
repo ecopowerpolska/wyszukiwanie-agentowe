@@ -1,0 +1,35 @@
+# pan-stolarz.pl — wszystko dozwolone; boty modeli językowych wpuszczone świadomie (decyzja Piotra 2026-09-10, jak nadihome.pl).
+# Content-Signal (https://contentsignals.org/): search, ai-input i ai-train dozwolone — polityka Piotra 2026-10-13.
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+# Panel treści (Sveltia) poza indeksem; reguła w każdej grupie, bo robot czyta tylko swoją (RFC 9309 2.2.1).
+Disallow: /admin/
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: meta-webindexer
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: Amazonbot
+User-agent: Amzn-SearchBot
+User-agent: Amzn-User
+User-agent: MistralAI-Index
+User-agent: MistralAI-User
+User-agent: MistralAI-Training
+User-agent: CCBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+# Panel treści (Sveltia) poza indeksem; reguła w każdej grupie, bo robot czyta tylko swoją (RFC 9309 2.2.1).
+Disallow: /admin/
+
+Sitemap: https://pan-stolarz.pl/sitemap.xml

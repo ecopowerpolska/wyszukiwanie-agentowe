@@ -1,0 +1,199 @@
+# nadihome.pl — Nadi Home, remonty mieszkań, Warszawa
+# Wersja PRODUKCYJNA. Build próbny (npm run build:probna) nadpisuje ten plik blokadą całej
+# witryny — robi to wtyczka `blokada-indeksowania-probnej` w astro.config.mjs.
+
+# Content Signals (contentsignals.org, dopisane 2026-10-13): search = indeks i wyniki
+# wyszukiwania, ai-input = podanie treści modelowi w odpowiedzi (RAG, grounding),
+# ai-train = trenowanie modeli. Polityka Piotra: wszystkie trzy yes. Sygnał działa
+# per grupa, więc stoi w KAŻDEJ grupie niżej, bezpośrednio pod User-agent.
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+# Panel tresci (Sveltia CMS, dodany 2026-09-11). Wylaczony z wyszukiwarek trzema drogami:
+# ten wiersz, <meta name="robots" content="noindex"> w public/admin/index.html oraz naglowek
+# X-Robots-Tag z public/.htaccess. Wiersz dluzszy od Allow: / ma pierwszenstwo (RFC 9309,
+# zasada najdluzszego dopasowania), wiec /admin/ jest zabronione mimo Allow wyzej.
+# 🔴 Grupy nazwane nizej NIE dziedzicza tego wiersza: bot z wlasna grupa czyta WYLACZNIE ja
+# (RFC 9309 p. 2.2.1), wiec Disallow: /admin/ stoi w kazdej z nich osobno (pomiar 2026-10-09:
+# bez tego GPTBot, ClaudeBot i siedmiu pozostalych mialo /admin/ dozwolone).
+Disallow: /admin/
+
+# ── Boty modeli językowych — DECYZJA, nie przeoczenie ────────────────────────────────
+# Wpuszczamy je. Powód: ta strona istnieje po to, żeby ktoś szukający ekipy remontowej
+# w Warszawie ją znalazł, a pytania w rodzaju „kto wyremontuje mi łazienkę" coraz częściej
+# padają asystentowi, nie wyszukiwarce. Cennik pozycjami i FAQ z normami to dokładnie ta
+# treść, którą asystent może zacytować z pożytkiem dla firmy.
+#
+# Stara strona blokowała GPTBota, ClaudeBota, CCBota i Google-Extended wpisem Cloudflare
+# Managed content, czyli ustawieniem domyślnym dostawcy, a nie decyzją właściciela. Strona
+# nadal stoi za Cloudflare. Zarządzany robots.txt Piotr wyłączył 2026-09-10 (AI Crawl Control,
+# Signals, Managed robots.txt) — ten plik dochodzi do botów bez dopisków.
+# 🔴 Osobno od tego pliku Cloudflare może ODRZUCAĆ boty treningowe na brzegu (kod 403,
+# treść: Your request was blocked.). Pomiar 2026-10-09: GPTBot, ClaudeBot, CCBot, Amazonbot
+# i Bytespider dostają 403 na każdej stronie poza robots.txt. Tego plik nie odblokuje —
+# rozstrzyga ustawienie botów AI w panelu Cloudflare, które musi być zgodne z tym plikiem.
+#
+# 🔴 Żeby to odwrócić, dopisz poniżej i przebuduj stronę:
+#   User-agent: GPTBot
+#   User-agent: ClaudeBot
+#   User-agent: PerplexityBot
+#   User-agent: Google-Extended
+#   Disallow: /
+#
+# ── Trzy rodzaje tokenów, nie jeden (2026-09-11) ─────────────────────────────────────
+# Każdy dostawca ma OSOBNE nazwy dla trenowania modelu, dla indeksowania do wyników czatu
+# i dla pobrania wywołanego pytaniem użytkownika. To trzy różne rzeczy i można je rozstrzygnąć
+# różnie. Do 2026-09-10 stały tu wyłącznie tokeny TRENINGOWE (GPTBot, ClaudeBot) — czyli te,
+# które z widocznością w czacie nie mają nic wspólnego. Tokeny odpowiadające za CYTOWANIE nas
+# w odpowiedzi (OAI-SearchBot, Claude-SearchBot, PerplexityBot) i za pobranie na żądanie
+# użytkownika (ChatGPT-User, Claude-User, Perplexity-User) dopisano 2026-09-11, żeby decyzja
+# obejmowała to, o co naprawdę chodzi: żeby asystent mógł nas znaleźć i zacytować.
+# Nazwy wzięte z dokumentacji dostawców, odczyt 2026-10-09: OpenAI developers.openai.com/api/docs/bots;
+# Anthropic support.claude.com art. 8896518 (2026-04-07); Perplexity docs.perplexity.ai/guides/bots;
+# Google developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers (2026-07-14);
+# Apple support.apple.com/en-us/119829 (2026-09-04); Meta developers.facebook.com/docs/sharing/webmasters/web-crawlers;
+# Amazon developer.amazon.com/amazonbot; Mistral docs.mistral.ai/robots; Common Crawl commoncrawl.org/ccbot.
+# Tokenów z pamięci ani z opracowań tu nie ma.
+# Uwaga o mechanizmie (RFC 9309): bot BEZ własnej grupy i tak podlega grupie User-agent: *,
+# która wyżej wpuszcza wszystko. Nazwane grupy są więc ZAPISEM DECYZJI, a nie warunkiem wpuszczenia.
+
+# OpenAI — trenowanie
+User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# OpenAI — wyniki wyszukiwania w ChatGPT (to ten token decyduje o cytowaniu nas)
+User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# OpenAI — pobranie strony na pytanie użytkownika
+User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Anthropic — trenowanie
+User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Anthropic — indeksowanie do wyników wyszukiwania
+User-agent: Claude-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Anthropic — pobranie strony na pytanie użytkownika
+User-agent: Claude-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Perplexity — indeksowanie do wyników (dostawca zaznacza, że nie zbiera danych do trenowania)
+User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Perplexity — pobranie strony na pytanie użytkownika
+User-agent: Perplexity-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Google — użycie treści do uczenia Gemini i Vertex AI. Zdanie Google, zacytowane:
+# Google-Extended does not impact a site's inclusion in Google Search nor is it used
+# as a ranking signal in Google Search. Czyli ten wpis NIE rusza pozycji w wyszukiwarce.
+User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Apple — wyszukiwanie w Spotlight, Siri i Safari (dostawca: dane mogą też służyć do uczenia)
+User-agent: Applebot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Apple — wyłącznie sterowanie uczeniem modeli Apple; sam nie pobiera stron
+User-agent: Applebot-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Meta — indeksowanie do wyników wyszukiwania Meta AI (cytowanie i odnośnik)
+User-agent: meta-webindexer
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Meta — trenowanie modeli
+User-agent: meta-externalagent
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Meta — pobranie strony na prośbę użytkownika (dostawca: może pominąć robots.txt)
+User-agent: meta-externalfetcher
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Amazon — produkty i usługi Amazona, dane mogą służyć do uczenia modeli
+User-agent: Amazonbot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Amazon — wyszukiwanie (np. Alexa); dostawca: nie zbiera danych do trenowania
+User-agent: Amzn-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Amazon — pobranie strony na pytanie użytkownika Alexy
+User-agent: Amzn-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Mistral — indeksowanie do wyników
+User-agent: MistralAI-Index
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Mistral — pobranie strony na pytanie użytkownika
+User-agent: MistralAI-User
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Mistral — trenowanie modeli
+User-agent: MistralAI-Training
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# Common Crawl — otwarty zbiór stron, z którego korzysta wiele zespołów uczących modele
+User-agent: CCBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Disallow: /admin/
+
+# ── Czego tu świadomie NIE MA (stan 2026-10-09) ──────────────────────────────────────
+# Bytespider (ByteDance) i boty xAI (Grok) — dostawcy nie publikują strony o swoich botach,
+# a tokenu zapisanego z pamięci albo z opracowania w tym pliku nie stawiamy.
+# bingbot — Microsoft nie ma osobnego tokenu dla Copilota: Copilot korzysta z indeksu Bing,
+# a ograniczenia ustawia się znacznikami NOARCHIVE / NOCACHE na stronie (blogs.bing.com,
+# 2023-09-22). Ta strona ich nie stawia, więc Copilot może ją cytować.
+# OAI-AdsBot (OpenAI, walidacja stron reklam w ChatGPT), GoogleOther, Google-CloudVertexBot
+# (agenty Vertex AI budowane przez właściciela strony), meta-externalads i facebookexternalhit
+# (podgląd linku) nie dotyczą widoczności w asystentach. Wszystkie wyżej podlegają grupie
+# User-agent: *, czyli są wpuszczone poza /admin/.
+
+Sitemap: https://nadihome.pl/sitemap.xml

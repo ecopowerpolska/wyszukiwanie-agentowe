@@ -1,0 +1,16 @@
+HTTP/2 404 
+date: Thu, 05 Nov 2026 11:43:18 GMT
+content-type: text/html; charset=UTF-8
+content-length: 74983
+strict-transport-security: max-age=31536000
+vary: User-Agent
+last-modified: Wed, 04 Nov 2026 20:58:39 GMT
+etag: "124e7-65f79a4bf52aa"
+accept-ranges: bytes
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+x-frame-options: SAMEORIGIN
+permissions-policy: camera=(), microphone=(), geolocation=(), payment=()
+cache-control: public, max-age=600, stale-while-revalidate=60
+server: Apache
+

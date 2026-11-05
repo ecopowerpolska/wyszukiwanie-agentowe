@@ -1,0 +1,98 @@
+# EcoPower Polska
+
+> Budujemy szybkie strony internetowe i sklepy internetowe dla firm, a potem je prowadzimy. Każdą stronę mierzymy w Google PageSpeed Insights i publikujemy wynik: nasze realizacje mają 97–100 punktów wydajności na telefonie i 100 na komputerze.
+
+EcoPower Polska Sp. z o.o. to warszawska firma z Gocławia. Projektujemy, piszemy i wdrażamy strony i sklepy dla małych i średnich firm usługowych — od wizytówki po sklep z płatnością online. Ceny orientacyjne netto są w [cenniku](https://www.ecopowerpolska.pl/cena/), a [kalkulator](https://www.ecopowerpolska.pl/cena/#kalkulator) liczy wycenę od razu.
+
+## Co robimy
+
+- [Strony internetowe dla firm](https://www.ecopowerpolska.pl/strony-internetowe-warszawa/): Strona z ofertą, realizacjami, blogiem i formularzem, zbudowana w Astro jako gotowe pliki HTML. Otwiera się szybko nawet na słabym telefonie, bo przy wejściu nie odpytuje bazy danych i nie ładuje zbędnych skryptów.
+- [Sklepy internetowe](https://www.ecopowerpolska.pl/sklepy-internetowe-warszawa/): Dobieramy drogę do sklepu: WooCommerce albo PrestaShop na hostingu, platforma abonamentowa (Shoper, IdoSell) albo lekki sklep w Astro z płatnością online. Mówimy wprost, co która droga kosztuje miesięcznie i czego nie potrafi.
+- [Strona wizytówka](https://www.ecopowerpolska.pl/strona-wizytowka/): Jedna strona albo kilka podstron dla małej firmy: kim jesteś, co robisz, jak się skontaktować. Wizytówka bez sprzedaży może stać na GitHub Pages bez opłat za hosting — tak działa ta strona.
+- [Prowadzenie strony](https://www.ecopowerpolska.pl/prowadzenie-strony-internetowej/): Po publikacji zmieniamy treści, pilnujemy szybkości i Search Console, prowadzimy wizytówkę Google i raportujemy, co się zmieniło w ruchu i pozycjach.
+- Panel do edycji treści: Teksty, zdjęcia i wpisy zmieniasz sam w panelu pod adresem /admin/ (Sveltia, zapis w repozytorium strony) albo w panelu PHP na hostingu, bez konta na GitHubie.
+- Hosting, domena i poczta: Strony z formularzami i sklepy stawiamy na polskim hostingu lh.pl, każdą w osobnym katalogu. Przy przepięciu domeny przenosimy rekordy DNS tak, żeby poczta działała bez przerwy.
+- Widoczność w Google: Tytuły, opisy, dane strukturalne, mapa strony, Search Console, IndexNow dla Binga i wizytówka Google z tymi samymi danymi firmy co na stronie.
+- Facebook i Instagram: Łączymy stronę z kontami firmy i możemy je prowadzić; nowy wpis na blogu może sam trafiać na Facebooka.
+
+## Dla kogo
+
+Dla firm usługowych, które chcą, żeby klient znalazł je w Google, zobaczył prawdziwe realizacje i od razu napisał albo zadzwonił: wykonawców remontów i wylewek, stolarzy i producentów mebli na wymiar, projektantów wnętrz, sklepów z własnym towarem.
+
+## Jak pracujemy
+
+1. Zakres: ustalamy, co strona ma robić — pokazać ofertę, zbierać zapytania czy sprzedawać.
+2. Treść i zdjęcia: prawdziwe zdjęcia realizacji, nie obrazy z generatora; teksty z faktów firmy.
+3. Budowa obok starej strony: nową oglądasz pod adresem roboczym, zanim zastąpi obecną.
+4. Kontrola przed publikacją: automatyczna bramka sprawdza tytuły, opisy, mapę strony, dostępność i wagę plików; strona z błędem nie idzie na hosting.
+5. Przepięcie domeny: stare adresy przekierowujemy na nowe (301), żeby wyniki w Google nie prowadziły w próżnię.
+6. Pomiar: po publikacji PageSpeed na telefonie i komputerze; wynik publikujemy pod realizacją.
+
+## Fakty
+
+- Technologia: Astro (statyczne pliki HTML), PHP 8.4 na hostingu lh.pl dla formularzy i paneli, Cloudflare dla DNS i ochrony formularzy (Turnstile).
+- Szybkość: 7 realizacji, PageSpeed Insights 27.10.2026 — wydajność na telefonie 97–100, na komputerze 100; przeglądanie agentowe 4/4 na każdej.
+- Każda strona ma osobne repozytorium kodu i osobny dostęp do panelu — strony klientów nie dzielą kodu ani haseł.
+- [Sprawdź szybkość swojej strony](https://www.ecopowerpolska.pl/jak-sprawdzic-szybkosc-strony/): darmowy test w Google PageSpeed Insights i objaśnienie wyniku.
+
+## Realizacje
+
+- [Studio Agat](https://studioagat.pl/): projekty wnętrz, kuchnie i meble na wymiar w Warszawie; przeniesione z WordPressa do Astro.
+- [Nadi Home](https://nadihome.pl/): remonty i wykończenia mieszkań w Warszawie, z cennikiem i panelem treści.
+- [Pan Stolarz](https://pan-stolarz.pl/): meble na wymiar w Warszawie, kalkulatory cen i koszyk wycen.
+- [Kuchnia na wymiar Warszawa](https://kuchnia-na-wymiar-warszawa.pl/): kuchnie na wymiar z kalkulatorem ceny.
+- [Szafy na wymiar Warszawa](https://szafy-na-wymiar-warszawa.pl/): szafy wnękowe, przesuwne i do sufitu.
+- [Garderoba na wymiar Warszawa](https://garderoba-na-wymiar-warszawa.pl/): garderoby walk-in, we wnęce i pod skosem.
+- [Pan Wylewka](https://panwylewka.pl/): wylewki betonowe w Warszawie i okolicach.
+
+## Strony tej witryny
+
+- [Strona główna](https://www.ecopowerpolska.pl/): oferta, realizacje z wynikami PageSpeed, kontakt i dane spółki.
+- [Tworzenie stron internetowych w Warszawie](https://www.ecopowerpolska.pl/strony-internetowe-warszawa/): proces, czas, technologia, panel, hosting i realizacje z wynikami PageSpeed.
+- [Tworzenie sklepów internetowych w Warszawie](https://www.ecopowerpolska.pl/sklepy-internetowe-warszawa/): cztery drogi do sklepu, płatności, dostawy, koszty stałe.
+- [Strona wizytówka dla firmy](https://www.ecopowerpolska.pl/strona-wizytowka/): co zawiera, kiedy wystarczy i ile kosztuje.
+- [Prowadzenie strony internetowej](https://www.ecopowerpolska.pl/prowadzenie-strony-internetowej/): zmiany treści, pomiar, Search Console, wizytówka Google i raporty.
+- [Cennik](https://www.ecopowerpolska.pl/cena/): ceny netto wykonania i prowadzenia strony oraz sklepu, z kalkulatorem.
+- [Kontakt i wycena](https://www.ecopowerpolska.pl/kontakt/): formularz zapytania z dołączonym wyliczeniem z kalkulatora.
+- [Pytania i odpowiedzi](https://www.ecopowerpolska.pl/faq/): 22 pytania o czas, panel, hosting, pocztę, sklep, PageSpeed i Google.
+- [Efekty na stronach](https://www.ecopowerpolska.pl/efekty/): efekty z wagą w kB i wynikiem PageSpeed.
+- [Animacja sterowana przewijaniem](https://www.ecopowerpolska.pl/efekty/animacja-przewijaniem/): przykład efektu z wagą skryptu i wynikiem PageSpeed.
+- [Blog](https://www.ecopowerpolska.pl/blog/): wpisy o budowie stron i sklepów — ceny, czas budowy, panel, wybór platformy.
+- [Polityka prywatności](https://www.ecopowerpolska.pl/polityka-prywatnosci/): administrator danych, dane z formularza, Cloudflare Turnstile, hosting GitHub Pages i LH.pl, pamięć przeglądarki i tłumaczenie strony po zgodzie, brak statystyk, prawa osób.
+- [Regulamin](https://www.ecopowerpolska.pl/regulamin/): zasady korzystania z usług serwisu: formularz, kalkulator, test szybkości, reklamacje.
+- [Darmowe narzędzia](https://www.ecopowerpolska.pl/darmowe-narzedzia/): test szybkości, dziewięć osobnych testów audytu strony oraz generatory regulaminu i polityki prywatności na podstawie NIP firmy.
+- [Dane z prawdziwych wizyt (Core Web Vitals)](https://www.ecopowerpolska.pl/narzedzia/dane-terenowe-crux/): darmowy test, wpisujesz adres strony; LCP, INP i CLS z raportu Chrome (CrUX) dla adresu i całej witryny, telefon i komputer.
+- [Wyszukiwanie agentowe i AI](https://www.ecopowerpolska.pl/narzedzia/wyszukiwanie-agentowe-ai/): darmowy test, wpisujesz adres strony; gotowość strony na ChatGPT, Gemini i Claude: llms.txt, katalog zasobów, dostęp botów AI, dane strukturalne.
+- [SEO techniczne](https://www.ecopowerpolska.pl/narzedzia/seo-techniczne/): darmowy test, wpisujesz adres strony; przekierowania, tytuł, opis, H1, canonical, noindex, robots.txt, mapa strony, dane strukturalne.
+- [Test dostępności strony](https://www.ecopowerpolska.pl/narzedzia/dostepnosc/): darmowy test, wpisujesz adres strony; kontrast, opisy zdjęć, formularze, nagłówki, język; wynik PageSpeed i kontrole serwera.
+- [Waga strony i zdjęcia](https://www.ecopowerpolska.pl/narzedzia/waga-i-media/): darmowy test, wpisujesz adres strony; rozmiar HTML, skrypty, arkusze, formaty i wymiary zdjęć, największe pliki.
+- [Bezpieczeństwo i zaufanie strony](https://www.ecopowerpolska.pl/narzedzia/bezpieczenstwo-i-zaufanie/): darmowy test, wpisujesz adres strony; HTTPS, certyfikat, HSTS, nagłówki ochronne, mieszane treści, formularze i ciasteczka.
+- [Test poczty i zabezpieczeń domeny](https://www.ecopowerpolska.pl/narzedzia/poczta-domeny/): darmowy test, wpisujesz adres strony; MX, SPF, DKIM, DMARC i werdykt, czy da się podszyć pod domenę.
+- [Ochrona przed spamem](https://www.ecopowerpolska.pl/narzedzia/ochrona-przed-spamem/): darmowy test, wpisujesz adres strony; ochrona formularzy, SPF/DKIM/DMARC, czarne listy spamu, adresy e-mail w kodzie strony.
+- [Prawo na stronie](https://www.ecopowerpolska.pl/narzedzia/prawo-na-stronie/): darmowy test, wpisujesz adres strony; polityka prywatności, zgoda na cookies, regulamin, dane firmy, skrypty śledzące przed zgodą.
+- [Generator regulaminu serwisu](https://www.ecopowerpolska.pl/generator-regulaminu/): wpisujesz NIP, dane firmy pobieramy z rejestrów (MF, KRS, CEIDG), dokument powstaje w przeglądarce; kopiowanie, plik HTML, wydruk.
+- [Generator polityki prywatności](https://www.ecopowerpolska.pl/generator-polityki-prywatnosci/): wpisujesz NIP, wybierasz używane narzędzia (formularz, cookies, analityka), wzór polityki (informacyjny, nie porada prawna) powstaje w przeglądarce.
+
+## Wpisy na blogu
+
+- [Prawne aspekty strony internetowej: zgody, regulaminy i obowiązki w 2026 roku](https://www.ecopowerpolska.pl/blog/prawne-aspekty-strony-internetowej-zgody-regulaminy/) (31 października 2026): Co musi mieć strona firmowa i sklep w Polsce: dane firmy, polityka prywatności, zgody na cookies i newsletter, regulamin, prawa konsumenta. Tabele i lista kontrolna.
+- [Polityka prywatności w 2027 roku: co już obowiązuje, a co jest tylko projektem](https://www.ecopowerpolska.pl/blog/polityka-prywatnosci-2027-co-sie-zmieni/) (30 października 2026): Digital Omnibus, ciasteczka, AI Act, dostępność i NIS2: co już obowiązuje, co jest projektem i co poprawiamy w polityce prywatności strony firmowej.
+- [Core Web Vitals po polsku: LCP, INP i CLS na przykładach](https://www.ecopowerpolska.pl/blog/core-web-vitals-po-polsku/) (29 października 2026): Co mierzą LCP, INP i CLS, jakie wyniki Google uznaje za dobre i jak wyglądają na siedmiu naszych stronach w pomiarze PageSpeed z października 2026.
+- [Ile kosztuje strona i sklep internetowy w 2026 roku i skąd biorą się te ceny](https://www.ecopowerpolska.pl/blog/ile-kosztuje-strona-i-sklep-internetowy/) (28 października 2026): Ile kosztuje strona internetowa i sklep w 2026 roku: widełki i mediany z 18 źródeł, co jest w cenie i ile płaci się co miesiąc.
+- [Strona wizytówka: przykłady i co musi zawierać](https://www.ecopowerpolska.pl/blog/strona-wizytowka-przyklady/) (27 października 2026): Co musi mieć strona wizytówka firmy: oferta, kontakt, formularz, prawdziwe zdjęcia i dane dla Google. Przykłady z naszych stron i kiedy to za mało.
+- [Jak wygląda strona firmy meblowej i studia wnętrz: dwie realizacje krok po kroku](https://www.ecopowerpolska.pl/blog/strona-firmy-meblowej-i-studia-wnetrz-dwie-realizacje/) (23 października 2026): Dwie nasze realizacje: Pan Stolarz od zera i Studio Agat przeniesione z WordPressa. Co mają, jak powstały i czego potrzebuje firma od mebli lub wnętrz.
+- [WooCommerce, PrestaShop czy Shoper: jaki sklep wybrać](https://www.ecopowerpolska.pl/blog/woocommerce-prestashop-czy-shoper/) (20 października 2026): WooCommerce, PrestaShop, Shoper i IdoSell albo szybki sklep w Astro: dla kogo jest każda droga, kto obsługuje serwer i za co płacisz co miesiąc.
+- [Panel treści: jak sam zmienisz tekst i zdjęcia na stronie](https://www.ecopowerpolska.pl/blog/panel-tresci-jak-samodzielnie-zmienic-strone/) (16 października 2026): Jak działa panel treści pod adresem /admin/: co w nim zmienisz, czym różni się panel Sveltia od panelu w PHP i jak cofnąć zmianę.
+- [Ile trwa budowa strony firmy i co dostajesz?](https://www.ecopowerpolska.pl/blog/ile-trwa-budowa-strony-i-co-dostajesz/) (13 października 2026): Od czego zależy termin budowy strony, sześć kroków od ustalenia zakresu do utrzymania i co dostajesz po publikacji: repozytorium, panel, pomiar.
+- [Strona czy sklep internetowy — od czego zacząć?](https://www.ecopowerpolska.pl/blog/strona-czy-sklep-internetowy-od-czego-zaczac/) (9 października 2026): Strona firmowa czy sklep internetowy? Jak ustalamy, co strona ma robić, która z trzech dróg sklepu pasuje do firmy i gdzie stanie strona.
+
+## Kontakt
+
+- E-mail: kontakt@ecopowerpolska.pl · telefon: 537 318 316
+- EcoPower Polska Sp. z o.o., Bora Komorowskiego 21, 03-982 Warszawa · KRS 0000881612 · NIP 7011019372 · REGON 38814324000000
+
+## Pliki dla maszyn
+
+- [Mapa strony](https://www.ecopowerpolska.pl/sitemap.xml)
+- [Kanał RSS bloga](https://www.ecopowerpolska.pl/rss.xml)
+- [Katalog zasobów ARD](https://www.ecopowerpolska.pl/.well-known/ard.json)
